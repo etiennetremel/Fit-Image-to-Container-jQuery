@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Fit image to Container - Example</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="../jquery.fitImageToContainer.js"></script>  
+        
+        <style>
+			.square {
+				width:100px;
+				height:100px;
+				margin:10px;
+				float:left;
+				border:1px solid black;
+				overflow:hidden;
+			}
+			
+			.rectangle {
+				width:200px;
+				height:100px;
+				margin:10px;
+				float:left;
+				border:1px solid black;
+				overflow:hidden;
+			}
+		</style>
+		
+		<script>
+			$(document).ready(function() {
+				$('.thumb').fitImageToContainer();
+			});
+		</script>
+    
+    </head>
+    
+    <body>
+    	<h1>Fit image to container</h1>
+    	<p>Check the latest version on GitHub:<br /><a href="https://github.com/etiennetremel/Fit-Image-to-Container--jQuery-">https://github.com/etiennetremel/Fit-Image-to-Container--jQuery-</a></p>
+    	
+    	<h2>Original pictures</h2>
+    	<img src="my_image1.jpg" width="450px" /> <img src="my_image2.jpg" height="300px" />
+    	<div style="clear:both;" />
+    	<h2>Fit to a square</h2>
+    	<div class="thumb square">
+            <img src="my_image1.jpg" />
+        </div>
+        
+        <div class="thumb square">
+            <img src="my_image2.jpg" />
+        </div>
+        <div style="clear:both;" />
+        <h2>Fit to a rectangle</h2>
+        <div class="thumb rectangle">
+            <img src="my_image1.jpg" />
+        </div>
+        
+        <div class="thumb rectangle">
+            <img src="my_image2.jpg" />
+        </div>
+        
+    </body>
+</html>
