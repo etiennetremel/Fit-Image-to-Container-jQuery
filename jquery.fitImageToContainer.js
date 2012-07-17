@@ -34,13 +34,13 @@
 	 var methods = {
 	 	init : function( options ) {
 	 		var defaults = {
-	            fit: true,
+				fit: true,
 				complete: function(element) {
-					console.log(element);	
+					//Do something
 				}
-	        };
+	       		};
 	        
-	        var settings = $.extend({}, defaults, options);
+	        	var settings = $.extend({}, defaults, options);
         
 			return this.each(function(){
 				
