@@ -47,7 +47,7 @@
 				var container = $(this);
 				var image = container.find('img');
 				
-				image.bind('load', function() {
+				image.one('load', function() {
 					
 					//Remove css style:
 					$(this).css({
