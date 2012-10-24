@@ -12,10 +12,15 @@ Description
 
 Allow you to fit an image to its parent.
 
-Check the example folder to set it up!
+Browser compatibility
+---------------------
+
+Tested on IE8+, Chrome, FF 15+ (early version not tested yet), Safari 5.1+ (early version not tested yet)
+
 
 Usage
 -------
+Check the example folder to set it up!
 
 ### HTML
 	<div class="thumb">
