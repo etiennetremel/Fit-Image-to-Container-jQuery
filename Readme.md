@@ -1,9 +1,15 @@
 Fit Image to Container jQuery
 ========================
 
-Version 0.2
-http://www.etiennetremel.net
-	
+Version 0.3
+
+Author: Etienne Tremel
+
+Author URL: http://www.etiennetremel.net
+
+Description
+-----------
+
 Allow you to fit an image to its parent.
 
 Check the example folder to set it up!
@@ -36,4 +42,6 @@ Usage
 
 Changelog
 -------
+V0.3: Image load event listener function switched to "one();" instead of "bind();"
+
 V0.2: console.log() removed from the onComplete function.
