@@ -44,8 +44,8 @@
         
 			return this.each(function(){
 				
-				var container = $(this);
-				var image = container.find('img');
+				var container = $(this),
+					image = container.find('img');
 				
 				image.one('load', function() {
 					
@@ -57,59 +57,61 @@
 						'margin-top':''
 					});
 			
-					var width = $(this).width();
-					var height = $(this).height();		
-					var containerWidth = container.innerWidth();
-					var containerHeight = container.innerHeight();
-					
-					var ratioWidth, ratioHeight;
+					var width = $(this).width(),
+						height = $(this).height(),
+						containerWidth = container.innerWidth(),
+						containerHeight = container.innerHeight(),
+						ratioWidth,
+						ratioHeight,
+						top,
+						left;
 					
 					if(settings.fit) {
-						if(width>=containerWidth && height>=containerHeight) {
-							ratioWidth = 1/(width / containerWidth);
-							ratioHeight = 1/(height / containerHeight);
+						if(width >= containerWidth && height >= containerHeight) {
+							ratioWidth = 1 / (width / containerWidth);
+							ratioHeight = 1 / (height / containerHeight);
 						} else {
 							ratioWidth = containerWidth / width;
 							ratioHeight = containerHeight / height;
 						}
 						
 						//Define ratio:
-						if(ratioWidth<ratioHeight) {
-							width = parseInt(ratioHeight*width);
-							height = parseInt(ratioHeight*height);
+						if(ratioWidth < ratioHeight) {
+							width = parseInt(ratioHeight * width);
+							height = parseInt(ratioHeight * height);
 						} else {
-							width = parseInt(ratioWidth*width);
-							height = parseInt(ratioWidth*height);
+							width = parseInt(ratioWidth * width);
+							height = parseInt(ratioWidth * height);
 						}
 						
 						//Centering:
 						if(width > containerWidth) {
-							var left = parseInt((containerWidth - width)/2);
-							$(this).css('margin-left', left+'px');
+							left = parseInt((containerWidth - width)/2);
+							$(this).css('margin-left', left + 'px');
 						} else {
-							var top = parseInt((containerHeight - height)/2);
-							$(this).css('margin-top', top+'px');
+							top = parseInt((containerHeight - height)/2);
+							$(this).css('margin-top', top + 'px');
 						}
 					} else {
 						ratioWidth = containerWidth / width;
 						ratioHeight = containerHeight / height;
 						
 						//Define ratio:
-						if(ratioWidth>ratioHeight) {
-							width = parseInt(ratioHeight*width);
-							height = parseInt(ratioHeight*height);
+						if(ratioWidth > ratioHeight) {
+							width = parseInt(ratioHeight * width);
+							height = parseInt(ratioHeight * height);
 						} else {
-							width = parseInt(ratioWidth*width);
-							height = parseInt(ratioWidth*height);
+							width = parseInt(ratioWidth * width);
+							height = parseInt(ratioWidth * height);
 						}
 						
 						//Centering:
 						if(width < containerWidth) {
-							var left = parseInt((containerWidth - width)/2);
-							$(this).css('margin-left', left+'px');
+							left = parseInt((containerWidth - width)/2);
+							$(this).css('margin-left', left + 'px');
 						} else {
-							var top = parseInt((containerHeight - height)/2);
-							$(this).css('margin-top', top+'px');
+							top = parseInt((containerHeight - height)/2);
+							$(this).css('margin-top', top + 'px');
 						}
 					}
 		
@@ -119,7 +121,7 @@
 					
 					
 					//Callback
-					if(typeof settings.complete=='function') settings.complete($(this));
+					if(typeof settings.complete == 'function') settings.complete($(this));
 					
 				}).each(function() {
 					 if(this.complete) image.load();
