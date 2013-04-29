@@ -53,11 +53,11 @@ Check the example folder to set it up!
 Changelog
 -------
 V1.0: 
-    * New name: Fitc instead of the old ugly long name "Fit Image To Container"
-    * Tabs converted to 2 spaces
-    * New examples
-    * New function before
-    * jsLint test passed
+* New name: Fitc instead of the old ugly long name "Fit Image To Container"
+* Tabs converted to 2 spaces
+* New examples
+* New function before
+* jsLint test passed
 
 V0.3: Image load event listener function switched to "one();" instead of "bind();"
 
