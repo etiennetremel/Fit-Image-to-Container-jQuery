@@ -1,6 +1,6 @@
 /*
     Fit Image To Container
-    Version 1.0
+    Version 1.1
     Plugin created by Etienne TREMEL
     http://www.etiennetremel.net
     
