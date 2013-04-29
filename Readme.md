@@ -1,7 +1,7 @@
 jQuery Fit Image to Container (fitc)
 ====================================
 
-Version 1.0
+Version 1.1
 
 Author: Etienne Tremel
 
@@ -52,6 +52,8 @@ Check the example folder to set it up!
 
 Changelog
 -------
+V1.1: Remove image attribute width & height before fitting image
+
 V1.0: 
 * New name: Fitc instead of the old ugly long name "Fit Image To Container"
 * Tabs converted to 2 spaces
