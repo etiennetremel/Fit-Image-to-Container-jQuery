@@ -41,7 +41,6 @@
   'use strict';
   var methods = {
     init : function (options) {
-      console.log('init');
       var defaults = {
           fit: false,
           before: function (element) {},
