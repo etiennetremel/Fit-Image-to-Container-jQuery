@@ -60,8 +60,8 @@
         $image.one('load', function () {
           var $this = $(this);
 
-          //Remove css style:
-          $this.css({
+          //Remove css style and image attributes:
+          $this.removeAttr('width height').css({
             'width': '',
             'height': '',
             'margin-left': '',
