@@ -3,11 +3,12 @@
     Version 1.1
     Plugin created by Etienne TREMEL
     http://www.etiennetremel.net
-    
+    Github Repository: https://github.com/etiennetremel/Fit-Image-to-Container-jQuery
+
     Allow you to fit an image to its parent.
 
     USAGE:
-    
+
     <style>
         .thumb {
             width:100px;
@@ -15,7 +16,7 @@
             overflow:hidden;
         }
     </style>
-    
+
     <script>
         $(document).ready(function() {
             $('.thumb').fitc({
@@ -31,7 +32,7 @@
             });
         });
     </script>
-    
+
     <div class="thumb">
         <img src="my_image.jpg" />
     </div>
